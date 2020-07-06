@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+	<title>Задание 4.3</title>
+	<script src="./js/three.js"></script>
+	<script>
+		function gen() {
+			Array(25).fill().forEach((x, i) => document.getElementById(`a${i}`).value = Math.floor(Math.random() * (200)) - 100);
+		}
+	</script>
+</head>
+
+<body>
+	<div id="text">
+		Сформировать матрицу М1, вычтя из каждого элемента исходной матрицы М среднее арифметическое,<br>
+		вычисленное по всем ее элементам
+	</div>
+	<div id="input">
+		<input id="a0" type="number" value="1">
+		<input id="a1" type="number" value="1">
+		<input id="a2" type="number" value="1">
+		<input id="a3" type="number" value="1">
+		<input id="a4" type="number" value="1">
+
+		<br>
+
+		<input id="a5" type="number" value="1">
+		<input id="a6" type="number" value="1">
+		<input id="a7" type="number" value="1">
+		<input id="a8" type="number" value="1">
+		<input id="a9" type="number" value="1">
+		
+		<br>
+
+		<input id="a10" type="number" value="1">
+		<input id="a11" type="number" value="1">
+		<input id="a12" type="number" value="1">
+		<input id="a13" type="number" value="1">
+		<input id="a14" type="number" value="1">
+
+		<br>
+		
+		<input id="a15" type="number" value="1">
+		<input id="a16" type="number" value="1">
+		<input id="a17" type="number" value="1">
+		<input id="a18" type="number" value="1">
+		<input id="a19" type="number" value="1">
+		
+		<br>
+
+		<input id="a20" type="number" value="1">
+		<input id="a21" type="number" value="1">
+		<input id="a22" type="number" value="1">
+		<input id="a23" type="number" value="1">
+		<input id="a24" type="number" value="1">
+		
+		<br>
+
+		<button onclick="gen();">Сгенерировать</button>
+		<button onclick="calc();">Решить</button>
+	</div>
+	<div id="answer">
+
+	</div>
+</body>
+</html>
